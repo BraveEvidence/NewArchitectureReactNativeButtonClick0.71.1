@@ -21,10 +21,12 @@ public class MyButtonClickEvent extends Event<MyButtonClickEvent> {
     @Override
     public void dispatchModern(RCTModernEventEmitter rctEventEmitter) {
         super.dispatchModern(rctEventEmitter);
-        rctEventEmitter.receiveEvent(-1,
-                getViewTag(),getEventName(),
-                Arguments.createMap()
-        );
+//        rctEventEmitter.receiveEvent(-1,
+//                getViewTag(),getEventName(),
+//                Arguments.createMap()
+//        );
+        rctEventEmitter.receiveEvent(getViewTag(), getEventName(),
+                Arguments.createMap());
     }
 
     @Nullable

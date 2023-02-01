@@ -40,4 +40,6 @@ public class CenteredButton extends androidx.appcompat.widget.AppCompatButton {
             eventDispatcher.dispatchEvent(new MyButtonClickEvent(getId()));
         });
     }
+
+
 }
